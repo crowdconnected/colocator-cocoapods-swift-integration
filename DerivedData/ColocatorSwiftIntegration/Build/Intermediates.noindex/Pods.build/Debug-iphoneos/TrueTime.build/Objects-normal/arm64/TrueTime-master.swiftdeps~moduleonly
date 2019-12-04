@@ -1,0 +1,16 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "143b03ccf46d6f142eda11c4de03ad31"
+build_time: [1575459931, 51063000]
+inputs:
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/TrueTime/Sources/Endian.swift": [1575459915, 704891024]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/TrueTime/Sources/GCDLock.swift": [1575459915, 701408872]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/TrueTime/Sources/HostResolver.swift": [1575459915, 706144177]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/TrueTime/Sources/NTPClient.swift": [1575459915, 702221272]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/TrueTime/Sources/NTPConnection.swift": [1575459915, 700601019]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/TrueTime/Sources/NTPExtensions.swift": [1575459915, 703654292]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/TrueTime/Sources/NTPResponse.swift": [1575459915, 701803722]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/TrueTime/Sources/Reachability.swift": [1575459915, 704054549]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/TrueTime/Sources/ReferenceTime.swift": [1575459915, 700199511]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/TrueTime/Sources/SocketAddress.swift": [1575459915, 705712980]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/TrueTime/Sources/TimedOperation.swift": [1575459915, 705329910]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/TrueTime/Sources/TrueTime.swift": [1575459915, 706576217]

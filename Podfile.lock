@@ -1,0 +1,32 @@
+PODS:
+  - CCLocation (2.4.1):
+    - ReSwift (= 5.0.0)
+    - SocketRocket (= 0.4.2)
+    - SwiftProtobuf (= 1.6.0)
+    - TrueTime (= 5.0.3)
+  - ReSwift (5.0.0)
+  - SocketRocket (0.4.2)
+  - SwiftProtobuf (1.6.0)
+  - TrueTime (5.0.3)
+
+DEPENDENCIES:
+  - CCLocation (~> 2.4.1)
+
+SPEC REPOS:
+  trunk:
+    - CCLocation
+    - ReSwift
+    - SocketRocket
+    - SwiftProtobuf
+    - TrueTime
+
+SPEC CHECKSUMS:
+  CCLocation: 613a13014466fc31893e4f51ef121544a0fe5231
+  ReSwift: 628f1a9b3ee52e3b3ca2a644435472fd77afafe1
+  SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
+  SwiftProtobuf: e905ca1366405696411aaf174411c4b19c0ef73d
+  TrueTime: b49551ffafb28a9dee04e51b226f42a416010842
+
+PODFILE CHECKSUM: c9db054876aaecb0d2fe7f8301e499790a8fde66
+
+COCOAPODS: 1.8.4

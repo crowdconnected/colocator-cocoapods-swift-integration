@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "57bcced538ff0c5819418908b5ab86f7"
+build_time: [1575460615, 675962000]
+inputs:
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/ColocatorSwiftIntegration/ViewController.swift": [1575460613, 286854350]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/ColocatorSwiftIntegration/AppDelegate.swift": [1575460255, 794948212]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/ColocatorSwiftIntegration/SceneDelegate.swift": [1575460005, 521914623]

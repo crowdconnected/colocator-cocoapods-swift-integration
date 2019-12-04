@@ -1,0 +1,10 @@
+framework module TrueTime {
+  umbrella header "TrueTime-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TrueTime.__Swift {
+    exclude header "TrueTime-Swift.h"
+}

@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/tcode/Desktop/ColocatorSwiftIntegration/DerivedData/ColocatorSwiftIntegration/Build/Products/Debug-iphoneos/SwiftProtobuf/SwiftProtobuf.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/tcode/Desktop/ColocatorSwiftIntegration/DerivedData/ColocatorSwiftIntegration/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/SwiftProtobuf.build/unextended-module.modulemap",
+    }]
+  }]
+}

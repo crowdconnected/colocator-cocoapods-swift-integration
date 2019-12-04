@@ -1,0 +1,16 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
+options: "099e0820178ba2621a9162f18d420709"
+build_time: [1575459931, 53331000]
+inputs:
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/ReSwift/ReSwift/CoreTypes/Action.swift": [1575459915, 644917577]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/ReSwift/ReSwift/Utils/Assertions.swift": [1575459915, 645972277]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/ReSwift/ReSwift/Utils/Coding.swift": [1575459915, 645560147]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/ReSwift/ReSwift/CoreTypes/DispatchingStoreType.swift": [1575459915, 642230468]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/ReSwift/ReSwift/CoreTypes/Middleware.swift": [1575459915, 643416260]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/ReSwift/ReSwift/CoreTypes/Reducer.swift": [1575459915, 641833921]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/ReSwift/ReSwift/CoreTypes/State.swift": [1575459915, 642611647]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/ReSwift/ReSwift/CoreTypes/Store.swift": [1575459915, 643885638]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/ReSwift/ReSwift/CoreTypes/StoreSubscriber.swift": [1575459915, 644286543]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/ReSwift/ReSwift/CoreTypes/StoreType.swift": [1575459915, 641449467]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/ReSwift/ReSwift/CoreTypes/Subscription.swift": [1575459915, 643014488]
+  "/Users/tcode/Desktop/ColocatorSwiftIntegration/Pods/ReSwift/ReSwift/Utils/TypeHelper.swift": [1575459915, 646369623]

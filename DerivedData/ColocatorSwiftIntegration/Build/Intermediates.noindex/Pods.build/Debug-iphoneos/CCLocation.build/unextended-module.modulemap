@@ -1,0 +1,10 @@
+framework module CCLocation {
+  umbrella header "CCLocation-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module CCLocation.__Swift {
+    exclude header "CCLocation-Swift.h"
+}
