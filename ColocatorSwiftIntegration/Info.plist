@@ -39,8 +39,6 @@
 			</array>
 		</dict>
 	</dict>
-    <key>NSBluetoothAlwaysUsageDescription</key>
-    <string>We need access Bluetooth for improving location accuracy</string>
     <key>NSBluetoothPeripheralUsageDescription</key>
     <string>We need to know whether Bluetooth is switched on</string>
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
@@ -53,7 +51,6 @@
     <string>This app uses motion updates to determine your location indoors</string>
     <key>UIBackgroundModes</key>
     <array>
-        <string>bluetooth-central</string>
         <string>fetch</string>
         <string>location</string>
         <string>remote-notification</string>

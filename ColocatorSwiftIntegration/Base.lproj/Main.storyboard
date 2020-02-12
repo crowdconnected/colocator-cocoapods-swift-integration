@@ -1,24 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="ColocatorSwiftIntegration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enjoy using the app frictionless!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocl-eQ-eCn">
+                                <rect key="frame" x="77.5" y="144" width="259" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.25058685450000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aweome! Now you can enjoy the app and the festival!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1y-PL-cVz">
+                                <rect key="frame" x="32" y="429.5" width="350" height="37.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="0.25058685450000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i1y-PL-cVz" secondAttribute="trailing" constant="32" id="QyG-JS-GFA"/>
+                            <constraint firstItem="i1y-PL-cVz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cKe-Sg-KiZ"/>
+                            <constraint firstItem="ocl-eQ-eCn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lZc-fh-UFf"/>
+                            <constraint firstItem="ocl-eQ-eCn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="rFJ-o5-gFL"/>
+                            <constraint firstItem="i1y-PL-cVz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rkO-3d-Ekc"/>
+                            <constraint firstItem="i1y-PL-cVz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="sF6-ei-Sws"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="i1y-PL-cVz" id="Cdt-Ut-j27"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-148" y="366"/>
+        </scene>
+        <!--Onboarding Navigation Controller-->
+        <scene sceneID="77m-45-2l1">
+            <objects>
+                <navigationController storyboardIdentifier="OnboardingNavigationController" navigationBarHidden="YES" id="dqb-C7-1qi" customClass="OnboardingNavigationController" customModule="ColocatorSwiftIntegration" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WP7-1h-PPE">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2y7-Mg-5dG" kind="relationship" relationship="rootViewController" id="oV6-Kj-xcc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GRl-cT-oFI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-935" y="-302"/>
+        </scene>
+        <!--Onboarding Location View Controller-->
+        <scene sceneID="Xfj-CX-nyR">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingLocationViewController" id="eH5-yd-2Ja" customClass="OnboardingLocationViewController" customModule="ColocatorSwiftIntegration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FUx-TY-hUY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Colocator Sample App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbY-hv-08E">
+                                <rect key="frame" x="65.5" y="144" width="283.5" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.25058685450000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Improve your experience" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQh-rc-63e">
+                                <rect key="frame" x="32" y="438" width="350" height="20.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.25058685450000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leP-Ut-8Qo">
+                                <rect key="frame" x="130" y="737" width="154" height="34"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Allow My Location"/>
+                                <connections>
+                                    <action selector="actionAllowLocation:" destination="eH5-yd-2Ja" eventType="touchUpInside" id="7fT-ni-XTw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwH-Rb-0zU">
+                                <rect key="frame" x="191" y="801" width="32" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionSkip:" destination="eH5-yd-2Ja" eventType="touchUpInside" id="Crh-6S-h4m"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By allowing us to use your location, we can take your festival experience to the next level" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNB-pf-5KI">
+                                <rect key="frame" x="32" y="488.5" width="350" height="37.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="0.25058685450000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="leP-Ut-8Qo" firstAttribute="centerX" secondItem="FUx-TY-hUY" secondAttribute="centerX" id="0GL-dd-Vjt"/>
+                            <constraint firstItem="KbY-hv-08E" firstAttribute="centerX" secondItem="FUx-TY-hUY" secondAttribute="centerX" id="7ew-Wn-98w"/>
+                            <constraint firstItem="ZwH-Rb-0zU" firstAttribute="centerX" secondItem="FUx-TY-hUY" secondAttribute="centerX" id="9Bs-H8-x6L"/>
+                            <constraint firstItem="tQh-rc-63e" firstAttribute="centerY" secondItem="FUx-TY-hUY" secondAttribute="centerY" id="9JB-1Q-v9t"/>
+                            <constraint firstItem="tAn-cP-3ee" firstAttribute="trailing" secondItem="RNB-pf-5KI" secondAttribute="trailing" constant="32" id="EOL-rl-Dba"/>
+                            <constraint firstAttribute="trailing" secondItem="tQh-rc-63e" secondAttribute="trailing" constant="32" id="I7X-u9-rNt"/>
+                            <constraint firstItem="ZwH-Rb-0zU" firstAttribute="top" secondItem="leP-Ut-8Qo" secondAttribute="bottom" constant="30" id="O1w-5I-Rsz"/>
+                            <constraint firstItem="tQh-rc-63e" firstAttribute="centerX" secondItem="FUx-TY-hUY" secondAttribute="centerX" id="ac6-80-3mz"/>
+                            <constraint firstItem="RNB-pf-5KI" firstAttribute="leading" secondItem="tAn-cP-3ee" secondAttribute="leading" constant="32" id="eyG-Vr-BIE"/>
+                            <constraint firstItem="KbY-hv-08E" firstAttribute="top" secondItem="tAn-cP-3ee" secondAttribute="top" constant="100" id="iTc-wf-bJ7"/>
+                            <constraint firstItem="RNB-pf-5KI" firstAttribute="top" secondItem="tQh-rc-63e" secondAttribute="bottom" constant="30" id="nOg-f9-eC9"/>
+                            <constraint firstItem="tQh-rc-63e" firstAttribute="leading" secondItem="FUx-TY-hUY" secondAttribute="leading" constant="32" id="qs6-rJ-bRy"/>
+                            <constraint firstItem="tAn-cP-3ee" firstAttribute="bottom" secondItem="ZwH-Rb-0zU" secondAttribute="bottom" constant="30" id="rKq-vd-mF2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tAn-cP-3ee"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BRr-1x-yX2" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="643" y="-302"/>
+        </scene>
+        <!--Onboarding Notifications View Controller-->
+        <scene sceneID="D3q-yW-9Qw">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingNotificationsViewController" id="2y7-Mg-5dG" customClass="OnboardingNotificationsViewController" customModule="ColocatorSwiftIntegration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BTP-3K-xwN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Colocator Sample App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMG-pd-dk2">
+                                <rect key="frame" x="65.5" y="144" width="283.5" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.25058685446009388" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't miss out" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uE-aT-k3f">
+                                <rect key="frame" x="32" y="438" width="350" height="20.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.25058685446009388" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHM-c6-1Qk">
+                                <rect key="frame" x="129" y="737" width="156" height="34"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Allow Notifications"/>
+                                <connections>
+                                    <action selector="actionAllowNotifications:" destination="2y7-Mg-5dG" eventType="touchUpInside" id="Fa7-sf-dBr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X40-9M-z2d">
+                                <rect key="frame" x="191" y="801" width="32" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionSkip:" destination="2y7-Mg-5dG" eventType="touchUpInside" id="2fd-6A-i34"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow us to sen dyou Push Notifications and stay up to date on all festival related content" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHV-Ah-jfb">
+                                <rect key="frame" x="32" y="488.5" width="350" height="37.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="0.25058685446009388" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EHV-Ah-jfb" firstAttribute="leading" secondItem="BTP-3K-xwN" secondAttribute="leading" constant="32" id="7Zf-k1-vYO"/>
+                            <constraint firstItem="X40-9M-z2d" firstAttribute="centerX" secondItem="BTP-3K-xwN" secondAttribute="centerX" id="Hcj-3m-ELm"/>
+                            <constraint firstItem="X40-9M-z2d" firstAttribute="top" secondItem="JHM-c6-1Qk" secondAttribute="bottom" constant="30" id="Kaf-iQ-05B"/>
+                            <constraint firstItem="JHM-c6-1Qk" firstAttribute="centerX" secondItem="BTP-3K-xwN" secondAttribute="centerX" id="KbE-GO-xAP"/>
+                            <constraint firstItem="Cfl-mT-Ruv" firstAttribute="bottom" secondItem="X40-9M-z2d" secondAttribute="bottom" constant="30" id="Y4M-dq-qLq"/>
+                            <constraint firstItem="EHV-Ah-jfb" firstAttribute="top" secondItem="7uE-aT-k3f" secondAttribute="bottom" constant="30" id="dn3-QW-0QW"/>
+                            <constraint firstItem="7uE-aT-k3f" firstAttribute="centerY" secondItem="BTP-3K-xwN" secondAttribute="centerY" id="f1w-rS-8iT"/>
+                            <constraint firstItem="7uE-aT-k3f" firstAttribute="centerX" secondItem="BTP-3K-xwN" secondAttribute="centerX" id="hBA-PL-aWD"/>
+                            <constraint firstItem="7uE-aT-k3f" firstAttribute="leading" secondItem="BTP-3K-xwN" secondAttribute="leading" constant="32" id="lLQ-ML-HK1"/>
+                            <constraint firstAttribute="trailing" secondItem="EHV-Ah-jfb" secondAttribute="trailing" constant="32" id="mJg-Mo-uwH"/>
+                            <constraint firstItem="lMG-pd-dk2" firstAttribute="centerX" secondItem="BTP-3K-xwN" secondAttribute="centerX" id="oh7-ZW-udS"/>
+                            <constraint firstItem="EHV-Ah-jfb" firstAttribute="centerX" secondItem="BTP-3K-xwN" secondAttribute="centerX" id="vdZ-ek-gxg"/>
+                            <constraint firstAttribute="trailing" secondItem="7uE-aT-k3f" secondAttribute="trailing" constant="32" id="yEY-uD-LgY"/>
+                            <constraint firstItem="lMG-pd-dk2" firstAttribute="top" secondItem="Cfl-mT-Ruv" secondAttribute="top" constant="100" id="z9e-yl-Q5p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cfl-mT-Ruv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="n7h-Xa-FQY"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pDy-8D-KPR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-149" y="-302"/>
         </scene>
     </scenes>
 </document>

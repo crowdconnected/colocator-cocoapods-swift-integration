@@ -3,13 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97566D6F23F4026C004C4CB7 /* OnboardingNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97566D6E23F4026C004C4CB7 /* OnboardingNotificationsViewController.swift */; };
+		97566D7123F40349004C4CB7 /* OnboardingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97566D7023F40349004C4CB7 /* OnboardingNavigationController.swift */; };
+		975D4EB923F318AC00BBACD8 /* AppFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975D4EB823F318AC00BBACD8 /* AppFlowController.swift */; };
+		975D4EBB23F31A3B00BBACD8 /* OnboardingLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975D4EBA23F31A3B00BBACD8 /* OnboardingLocationViewController.swift */; };
 		AA90DC012397D34B003F747D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA90DC002397D34B003F747D /* AppDelegate.swift */; };
 		AA90DC032397D34B003F747D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA90DC022397D34B003F747D /* SceneDelegate.swift */; };
-		AA90DC052397D34B003F747D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA90DC042397D34B003F747D /* ViewController.swift */; };
+		AA90DC052397D34B003F747D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA90DC042397D34B003F747D /* MainViewController.swift */; };
 		AA90DC082397D34B003F747D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA90DC062397D34B003F747D /* Main.storyboard */; };
 		AA90DC0A2397D34C003F747D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA90DC092397D34C003F747D /* Assets.xcassets */; };
 		AA90DC0D2397D34C003F747D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA90DC0B2397D34C003F747D /* LaunchScreen.storyboard */; };
@@ -19,10 +23,14 @@
 /* Begin PBXFileReference section */
 		3AA68CFEA304639A13EC5D40 /* Pods-ColocatorSwiftIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColocatorSwiftIntegration.debug.xcconfig"; path = "Target Support Files/Pods-ColocatorSwiftIntegration/Pods-ColocatorSwiftIntegration.debug.xcconfig"; sourceTree = "<group>"; };
 		705F2C669BD15392658B0C49 /* Pods_ColocatorSwiftIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColocatorSwiftIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97566D6E23F4026C004C4CB7 /* OnboardingNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNotificationsViewController.swift; sourceTree = "<group>"; };
+		97566D7023F40349004C4CB7 /* OnboardingNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigationController.swift; sourceTree = "<group>"; };
+		975D4EB823F318AC00BBACD8 /* AppFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowController.swift; sourceTree = "<group>"; };
+		975D4EBA23F31A3B00BBACD8 /* OnboardingLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingLocationViewController.swift; sourceTree = "<group>"; };
 		AA90DBFD2397D34B003F747D /* ColocatorSwiftIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColocatorSwiftIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA90DC002397D34B003F747D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA90DC022397D34B003F747D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA90DC042397D34B003F747D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA90DC042397D34B003F747D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AA90DC072397D34B003F747D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA90DC092397D34C003F747D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA90DC0C2397D34C003F747D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +56,6 @@
 				3AA68CFEA304639A13EC5D40 /* Pods-ColocatorSwiftIntegration.debug.xcconfig */,
 				FF41F688D1185269A5962316 /* Pods-ColocatorSwiftIntegration.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +65,24 @@
 				705F2C669BD15392658B0C49 /* Pods_ColocatorSwiftIntegration.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97566D7223F40BDD004C4CB7 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				97566D7023F40349004C4CB7 /* OnboardingNavigationController.swift */,
+				97566D6E23F4026C004C4CB7 /* OnboardingNotificationsViewController.swift */,
+				975D4EBA23F31A3B00BBACD8 /* OnboardingLocationViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		97566D7323F40BF4004C4CB7 /* AppEngage */ = {
+			isa = PBXGroup;
+			children = (
+				AA90DC042397D34B003F747D /* MainViewController.swift */,
+			);
+			path = AppEngage;
 			sourceTree = "<group>";
 		};
 		AA90DBF42397D34B003F747D = {
@@ -83,7 +108,9 @@
 			children = (
 				AA90DC002397D34B003F747D /* AppDelegate.swift */,
 				AA90DC022397D34B003F747D /* SceneDelegate.swift */,
-				AA90DC042397D34B003F747D /* ViewController.swift */,
+				975D4EB823F318AC00BBACD8 /* AppFlowController.swift */,
+				97566D7323F40BF4004C4CB7 /* AppEngage */,
+				97566D7223F40BDD004C4CB7 /* Onboarding */,
 				AA90DC062397D34B003F747D /* Main.storyboard */,
 				AA90DC092397D34C003F747D /* Assets.xcassets */,
 				AA90DC0B2397D34C003F747D /* LaunchScreen.storyboard */,
@@ -207,9 +234,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA90DC052397D34B003F747D /* ViewController.swift in Sources */,
+				97566D7123F40349004C4CB7 /* OnboardingNavigationController.swift in Sources */,
+				97566D6F23F4026C004C4CB7 /* OnboardingNotificationsViewController.swift in Sources */,
+				AA90DC052397D34B003F747D /* MainViewController.swift in Sources */,
 				AA90DC012397D34B003F747D /* AppDelegate.swift in Sources */,
+				975D4EBB23F31A3B00BBACD8 /* OnboardingLocationViewController.swift in Sources */,
 				AA90DC032397D34B003F747D /* SceneDelegate.swift in Sources */,
+				975D4EB923F318AC00BBACD8 /* AppFlowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

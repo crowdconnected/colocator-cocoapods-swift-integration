@@ -10,37 +10,28 @@ import UIKit
 import CCLocation
 import CoreLocation
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
-    let locationManager = CLLocationManager()
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        configureLocationManager()
         configureCCLocationLibrary()
-    }
-    
-    private func configureLocationManager() {
-        locationManager.delegate = self
-        locationManager.requestAlwaysAuthorization()
-        locationManager.startUpdatingLocation()
     }
     
     private func configureCCLocationLibrary() {
         CCLocation.sharedInstance.delegate = self
         CCLocation.sharedInstance.setLoggerLevels(verbose: false,
-                                                  info: true,
+                                                  info: false,
                                                   debug: false,
-                                                  warning: true,
+                                                  warning: false,
                                                   error: true,
                                                   severe: true)
         CCLocation.sharedInstance.registerLocationListener()
     }
 }
 
-
-extension ViewController: CCLocationDelegate {
+extension MainViewController: CCLocationDelegate {
     func ccLocationDidConnect() {
         // Colocatr connected successfully
     }
@@ -57,5 +48,3 @@ extension ViewController: CCLocationDelegate {
         // Colocator failed to start/stop receiving location updates from server
     }
 }
-
-extension ViewController: CLLocationManagerDelegate { }
