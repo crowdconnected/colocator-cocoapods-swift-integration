@@ -1,5 +1,5 @@
 PODS:
-  - CCLocation (2.4.1):
+  - CCLocation (2.7.0):
     - ReSwift (= 5.0.0)
     - SocketRocket (= 0.4.2)
     - SwiftProtobuf (= 1.6.0)
@@ -10,7 +10,7 @@ PODS:
   - TrueTime (5.0.3)
 
 DEPENDENCIES:
-  - CCLocation (~> 2.4.1)
+  - CCLocation (~> 2.7.0)
 
 SPEC REPOS:
   trunk:
@@ -21,12 +21,12 @@ SPEC REPOS:
     - TrueTime
 
 SPEC CHECKSUMS:
-  CCLocation: 613a13014466fc31893e4f51ef121544a0fe5231
+  CCLocation: 640cd0b70db04079d3b32975a22a9369328c3267
   ReSwift: 628f1a9b3ee52e3b3ca2a644435472fd77afafe1
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
   SwiftProtobuf: e905ca1366405696411aaf174411c4b19c0ef73d
   TrueTime: b49551ffafb28a9dee04e51b226f42a416010842
 
-PODFILE CHECKSUM: c9db054876aaecb0d2fe7f8301e499790a8fde66
+PODFILE CHECKSUM: c16cbc08e9c9d7635125b314ccc623aaea05b6f8
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3
